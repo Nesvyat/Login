@@ -50,7 +50,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot password"/>
                                                 <connections>
-                                                    <action selector="fogotUserButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="tUs-Gh-huC"/>
+                                                    <action selector="forgotUserButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eFB-bl-LIV"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9y8-w2-sPK">
