@@ -22,7 +22,7 @@ class WelcomeViewController: UIViewController {
  override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        welcomeLabel.text = "Welcome \(user)!"
+     welcomeLabel.text = "Welcome \(user)!"
 
  }
 }
@@ -37,6 +37,11 @@ extension UIView {
         gradient.endPoint = CGPoint(x: 0, y: 1)
         layer.insertSublayer(gradient, at: 0)
     }
-}
+
+    
+    
+        
+    }
+
  
 

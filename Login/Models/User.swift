@@ -11,9 +11,11 @@ struct User {
     let persons: Person
     
 }
+
+
 extension User {
     static func creationUser() -> User {
-        User(login: "1", password: "1", persons: Person.creatingPerson())
+        User(login: "Svyatoslav", password: "1", persons: Person.creatingPerson())
     }
 }
 struct Person {
@@ -25,6 +27,8 @@ struct Person {
 extension Person {
     
 static func creatingPerson() -> Person {
-    Person(name: "Svyatoslav", surname: "Nesterov", hobby: "Football, Run, Basketball, Music")
+    Person(name: "Svyatoslav", surname: "Nesterov", hobby: "Football")
+    
 }
+   
 }

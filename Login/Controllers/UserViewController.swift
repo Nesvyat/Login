@@ -12,16 +12,11 @@ class UserViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    //private let user = "1"
-    //private let password = "1"
+    
     
     private let user = User.creationUser()
     
-    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       // guard let welcomeVC = segue.destination as? WelcomeViewController else {return}
-       // welcomeVC.user = user.login
-                
-    //}
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        guard let tabBarController = segue.destination as? UITabBarController else { return}
@@ -32,17 +27,9 @@ class UserViewController: UIViewController {
             }  else if let navigationVC = viewController as? UINavigationController {
                 guard let infoViewController = navigationVC.topViewController as? InfoViewController else { return }
                 infoViewController.user = user
-                    
-                    
-                    
                 }
-                
-                    
-                }
-            }
-        
-    
-    
+        }
+    }
         
     private func showAlert(title: String, message: String, textField: UITextField? = nil ) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
